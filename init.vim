@@ -8,17 +8,20 @@ Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'kien/ctrlp.vim'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'Chiel92/vim-autoformat'
+Plug 'scrooloose/nerdcommenter'
+Plug 'posva/vim-vue'
 
 call plug#end()
 
 let g:airline_theme='oceanicnext' 
 
-" Or if you have Neovim >= 0.1.5
 if (has("termguicolors"))
   set termguicolors
 endif
 
-" Theme
+let g:user_emmet_leader_key = '<c-e>'
+
 syntax enable
 colorscheme OceanicNext
 set background=dark
